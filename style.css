@@ -1,0 +1,162 @@
+header {
+background-color: black;
+margin-bottom: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+header nav ul li a {
+  color: #C5B358;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 20px 0 0;
+  font-family : 'Limelight';
+}
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+footer {
+  background-color: black;
+  margin-top: 20px;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+footer nav ul {
+  display: flex;
+  list-style: none;
+}
+footer nav ul li a {
+  color: #C5B358;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 50px 0 0;
+  font-family : 'Limelight';
+}
+body {
+  background-color : rgb(34, 54, 68);
+  /*border-left : 5px solid #CFB53B;
+  border-right : 5px solid #CFB53B;*/
+}
+img {
+  display: flex;
+  /*Border radius is used to round the corners of the image*/
+  border-radius : 8px;
+  margin-left : auto;
+  margin-right : auto;
+  width : 100%;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/*Limelight has been pulled from Google Fonts*/
+h1 {
+  font-family : 'Limelight';
+  text-align : center;
+  margin : 0px;
+  color : #C5B358;
+  font-size : 50px;
+  padding-top: 20px;
+}
+/*Josefin Sans has also been pulled from Google Fonts*/
+h2 {
+  font-family : 'Josefin Sans';
+  text-align : center;
+  font-size : 25px;
+  color : #C5B358;
+  text-shadow: 1px 1px black;
+}
+section {
+  margin : 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+hr {
+  border-top : 2px solid #CFB53B;
+}
+/*Roboto, as well, has been pulled from Google Fonts*/
+p, ol, ul, h3 {
+  font-family : 'Roboto';
+  color: antiquewhite;
+  font-size : 15px;
+  text-align : left;
+}
+.linkspacing {
+  display: flex;
+  flex-direction: row;
+}
+/*Groups the standard attributes shared by each link*/
+.item a {
+  font-family : 'Roboto';
+  color: antiquewhite;
+  text-decoration: none;
+}
+a:active {
+color : silver;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+form {
+ padding-top: 10px;
+}
+form label {
+  color: antiquewhite;
+  display: block;
+  font-size: 15x;
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+}
+form input,
+form textarea {
+  width: 100%;
+}
+form button {
+  font-size: 15px;
+}
+form textarea {
+  height: 180px;
+}
+.flexgroup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.item {
+flex: 1;
+margin: 10px;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex; 
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  header nav {
+    margin-top: 8px;
+  }
+  a:hover {
+    color: goldenrod;
+  }
+  .flexgroup {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
