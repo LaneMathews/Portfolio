@@ -16,7 +16,7 @@ header nav ul li a {
   text-decoration: none;
   font-size: 20px;
   margin: 0 20px 0 0;
-  font-family : 'Limelight';
+  font-family: 'Limelight';
 }
 header nav ul li:last-child a {
   margin-right: 0;
@@ -41,6 +41,7 @@ footer nav ul li a {
   font-family : 'Limelight';
 }
 body {
+  margin: 0;
   background-color : rgb(34, 54, 68);
   /*border-left : 5px solid #CFB53B;
   border-right : 5px solid #CFB53B;*/
@@ -67,9 +68,8 @@ h1 {
   font-size : 50px;
   padding-top: 20px;
 }
-/*Josefin Sans has also been pulled from Google Fonts*/
 h2 {
-  font-family : 'Josefin Sans';
+  font-family : Georgia, 'Times New Roman', Times, serif;
   text-align : center;
   font-size : 25px;
   color : #C5B358;
@@ -83,9 +83,9 @@ section {
 hr {
   border-top : 2px solid #CFB53B;
 }
-/*Roboto, as well, has been pulled from Google Fonts*/
+
 p, ol, ul, h3 {
-  font-family : 'Roboto';
+  font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: antiquewhite;
   font-size : 15px;
   text-align : left;
@@ -96,9 +96,12 @@ p, ol, ul, h3 {
 }
 /*Groups the standard attributes shared by each link*/
 .item a {
-  font-family : 'Roboto';
-  color: antiquewhite;
+  font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #C5B358;
   text-decoration: none;
+}
+.item ul {
+  list-style: none;
 }
 a:active {
 color : silver;
@@ -112,11 +115,11 @@ form {
  padding-top: 10px;
 }
 form label {
-  color: antiquewhite;
+  color: #C5B358;
   display: block;
   font-size: 15x;
   margin-bottom: 30px;
-  font-family: 'Roboto';
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 form input,
 form textarea {
@@ -141,7 +144,7 @@ margin: 10px;
 @media all and (min-width: 600px) {
   header {
     display: flex; 
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 30px;
   }
   header h1 {
